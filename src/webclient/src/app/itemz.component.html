@@ -1,0 +1,13 @@
+<h1>
+  {{title}}
+</h1>
+<div>
+  <a [routerLink]="['/']">home</a>
+  <a [routerLink]="['workspaces']">workspaces</a>
+</div>
+<div>
+
+  <button (click)="login()" *ngIf="!securityService.isAuthroized()">Login</button>
+  <button (click)="logout()" *ngIf="securityService.isAuthroized()">Logout</button>
+  </div>
+<router-outlet></router-outlet>

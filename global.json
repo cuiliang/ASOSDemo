@@ -1,0 +1,6 @@
+{
+  "projects": [ "src", "test", "libs", "libs/IdentityServer4/src" ],
+  "sdk": {
+    "version": "1.0.0-preview1-002702"
+  }
+}
